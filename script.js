@@ -10,7 +10,6 @@ const notenGewichtung = new Map([
     ['deutschAufsatz', 1.0/8],
     ['deutschTextverständnis', 1.0/8]
   ]);
-  
 
 /** Notenschnitt berechnen = Notenschnitt */
 
@@ -71,3 +70,14 @@ const notenGewichtung = new Map([
     })
     document.getElementById("gesamtnotenschnitt").value = '';
   }
+
+/** Steuerung Hilfetext ein- und ausblenden mit "HTML Dialog" */
+
+dialog = document.getElementById("hilfetext");
+  document.getElementById("openHilfetext").onclick = function(){
+  dialog.showModal();
+}
+
+document.getElementById("closeHilfetext").onclick = function(){
+  dialog.close();
+}
