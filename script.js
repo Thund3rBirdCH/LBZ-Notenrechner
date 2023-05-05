@@ -11,19 +11,26 @@ const notenGewichtung = new Map([
     ['deutschTextverständnis', 1.0/8]
   ]);
   
-  function notenschnitt() {
-    let schnitt = 0
-    notenGewichtung.forEach((value, key) =>{
-      let field = document.getElementById(key)
-      let note = field.value
-      schnitt += note * value
+
+/** Notenschnitt berechnen = Notenschnitt */
+
+  function notenschnitt() {                       /** Name der Funktion */
+    let schnitt = 0                               /** Schnitt auf 0 setzen */
+    notenGewichtung.forEach((value, key) =>{      /** Notengewichtung anhand der Map oben */
+      let field = document.getElementById(key)    /** Variable "field" für jedes Eingabefeld anhand des Keys */
+      let note = field.value                      /** Variable "note" für den eingegeben Wert pro Feld */
+      schnitt += note * value                     /** Berechnung des schnitts anhand "Note" x Wert in der Map */
       }); 
-      return schnitt
+      return schnitt                              /** Schnitt Wert ausgabe */
   }
+
+  /** Runden auf zwei stellen */
   
   function round2(val) {
     return Math.round(100 * val + 0.5) / 100;
   }
+
+/** Berechnen */
   
   function calculate(){
     let schnitt = notenschnitt()
@@ -31,6 +38,8 @@ const notenGewichtung = new Map([
     document.getElementById("gesamtnotenschnitt").value=schnitt
   }
   
+/** Funktion um leeres Fled zu finden für Reverse */
+
   function findEmptyFieldKey() {
     let result = null;
     notenGewichtung.forEach((value, key) =>{
@@ -42,6 +51,8 @@ const notenGewichtung = new Map([
     return result;
   }
   
+/** Reverse Rechnen wenn ein Feld leer bleibt */
+
   function reverseCalculate() {
     let sollSchnitt = document.getElementById("gesamtnotenschnitt").value;
     let schnittLeer = notenschnitt();
@@ -51,5 +62,12 @@ const notenGewichtung = new Map([
     let field = document.getElementById(key);
     field.value = round2(sollNote);
   }
-  
-  
+
+//** Reset Button / Alle Felder leeren */
+
+  function reset() {
+    notenGewichtung.forEach((value, key) =>{
+    document.getElementById(key).value = '';
+    })
+    document.getElementById("gesamtnotenschnitt").value = '';
+  }

@@ -11,60 +11,58 @@
 
 </head>
 <body>
+  <form id="vornoten">
+    <fieldset>
+      <legend>Vornoten</legend>
+      <label for="vornoteMathematik">Mathematik: </label><br> 
+      <input name="vornoteMathematik" id="vornoteMathematik" type="number" min="1" max="6" placeholder="Vornote Mathematik"><br> 
+          
+      <label for="geometrie">Geometrie: </label><br> 
+      <input name="geometrie" id="geometrie" type="number" min="1" max="6" placeholder="Vornote Geometrie"><br> 
+          
+      <label for="deutsch">Deutsch: </label><br> 
+      <input name="deuscth" id="deutsch" type="number" min="1" max="6" placeholder="Vornote Deutsch"><br> 
+          
+      <label for="französisch">Französisch: </label><br> 
+      <input name="französisch" id="französisch" type="number" min="1" max="6" placeholder="Vornote Französisch"><br> 
+          
+      <label for="englisch">Englisch: </label><br> 
+      <input name="englisch" id="englisch" type="number" min="1" max="6" placeholder="Vornote English"><br> 
+          
+      <label for="naturtechnik">Natur & Technik: </label><br> 
+      <input name="naturtechnik" id="naturtechnik" type="number" min="1" max="6" placeholder="Vornote Natur & Technik">
+    </fieldset>
+  </form>
+      
+  <form id="prüfungsnoten">
+    <fieldset>
+      <legend>Prüfungsnoten</legend>
+      <label for="prüfungsnoteMathematik">Mathematik: </label><br>
+      <input name="prüfungsnoteMathematik" id="prüfungsnoteMathematik" type="number" min="1" max="6" placeholder="Prüfungsnote Mathematik"></input><br>
+          
+      <label for="deutschAufsatz">Deutsch Aufsatz: </label><br>
+      <input name="deutschAufsatz" id="deutschAufsatz" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Aufsatz"></input><br>
+        
+      <label for="deutschTextverständnis">Deutsch Textverständnis: </label><br>
+      <input name="deutschTextverständnis" id="deutschTextverständnis" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Textverständnis"></input>
+    </fieldset>
+  </form>
+  
+  <form id="gesammtnoten">
+    <fieldset>
+      <legend>Gesamtnotenschnitt</legend>
+      <label for="gesamtnotenschnitt">Gesamtnotenschnitt: </label><br>
+      <input name="gesamtnotenschnitt" id="gesamtnotenschnitt" type="number"></input><br>
+    </fieldset>
+  </form>
+  
+  <div id="message-container"></div>
+      
+  <button onclick="calculate()">Berechnen</button>
+      
+  <button onclick="reverseCalculate()">Reverse</button>
 
-    <form id="vornoten">
-        <fieldset>
-          <legend>Vornoten</legend>
-              <label for="vornoteMathematik">Mathematik: </label><br> 
-              <input name="vornoteMathematik" id="vornoteMathematik" type="number" min="1" max="6" placeholder="Vornote Mathematik"><br> 
-          
-              <label for="geometrie">Geometrie: </label><br> 
-              <input name="geometrie" id="geometrie" type="number" min="1" max="6" placeholder="Vornote Geometrie"><br> 
-          
-              <label for="deutsch">Deutsch: </label><br> 
-              <input name="deuscth" id="deutsch" type="number" min="1" max="6" placeholder="Vornote Deutsch"><br> 
-          
-              <label for="französisch">Französisch: </label><br> 
-              <input name="französisch" id="französisch" type="number" min="1" max="6" placeholder="Vornote Französisch"><br> 
-          
-              <label for="englisch">Englisch: </label><br> 
-              <input name="englisch" id="englisch" type="number" min="1" max="6" placeholder="Vornote English"><br> 
-          
-              <label for="naturtechnik">Natur & Technik: </label><br> 
-              <input name="naturtechnik" id="naturtechnik" type="number" min="1" max="6" placeholder="Vornote Natur & Technik">
-        </fieldset>
-      </form>
-      
-      <form id="prüfungsnoten">
-        <fieldset>
-          <legend>Prüfungsnoten</legend>
-          <label for="prüfungsnoteMathematik">Mathematik: </label><br>
-          <input name="prüfungsnoteMathematik" id="prüfungsnoteMathematik" type="number" min="1" max="6" placeholder="Prüfungsnote Mathematik"></input><br>
-          
-          <label for="deutschAufsatz">Deutsch Aufsatz: </label><br>
-          <input name="deutschAufsatz" id="deutschAufsatz" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Aufsatz"></input><br>
-        
-          <label for="deutschTextverständnis">Deutsch Textverständnis: </label><br>
-          <input name="deutschTextverständnis" id="deutschTextverständnis" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Textverständnis"></input>
-        
-        </fieldset>
-      </form>
-      
-      <form id="gesammtnoten">
-        <fieldset>
-          <legend>Gesamtnotenschnitt</legend>
-          <label for="gesamtnotenschnitt">Gesamtnotenschnitt: </label><br>
-          <input name="gesamtnotenschnitt" id="gesamtnotenschnitt" type="number"></input><br>
-        </fieldset>
-      </form>
-      
-      <div id="message-container"></div>
-      
-      <button onclick="calculate()">Berechnen</button>
-      
-      <button onclick="reverseCalculate()">Reverse</button>
-      
-      <input type="reset" value="Reset">
+  <button onclick="reset()">Reset</button>
 
 </body>
 
