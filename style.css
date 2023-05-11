@@ -3,7 +3,3 @@ input:out-of-range {
     border: 2px solid red;
   
 }
-
-input:out-of-range + ::after {
-    content:' außerhalb des Bereichs!';
-}

@@ -81,3 +81,14 @@ dialog = document.getElementById("hilfetext");
 document.getElementById("closeHilfetext").onclick = function(){
   dialog.close();
 }
+
+/** Steuerung Disclamer ein- und ausblenden mit "HTML Dialog" */
+
+dialog = document.getElementById("hinweistext");
+  document.getElementById("openHinweis").onclick = function(){
+  dialog.showModal();
+}
+
+document.getElementById("closeHinweis").onclick = function(){
+  dialog.close();
+}
