@@ -4,6 +4,9 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
+## 0.1.4
+-Texte werden entsprechend den Noten eingeblendet.
+
 ## 0.1.3.1 (Fix)
 - Hinweistexte lassen sich wieder Schliessen
 

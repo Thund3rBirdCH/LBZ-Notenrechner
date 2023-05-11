@@ -37,6 +37,7 @@ const notenGewichtung = new Map([
     let schnitt = notenschnitt()
     schnitt = round2(schnitt);
     document.getElementById("gesamtnotenschnitt").value=schnitt
+    ctrlMsg()
   }
   
 /** Funktion um leeres Fled zu finden für Reverse */
@@ -63,6 +64,23 @@ const notenGewichtung = new Map([
     let field = document.getElementById(key);
     field.value = round2(sollNote);
   }
+
+function ctrlMsg(){
+  let schnitt = document.getElementById("gesamtnotenschnitt").value
+  console.log(schnitt);
+  if (schnitt >= 4.75){
+    dialogGymnasiumtext = document.getElementById("gymnasiumtext");{
+      dialogGymnasiumtext.showModal();}
+  }
+  if (schnitt >= 4.5){
+    dialogHandelsschuletext = document.getElementById("handelsschuletext");{
+      dialogHandelsschuletext.showModal();}
+  }
+  else{
+    dialoglehretext = document.getElementById("lehretext");{
+    dialoglehretext.showModal();}
+  }
+}
 
 //** Reset Button / Alle Felder leeren */
 
