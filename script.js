@@ -1,3 +1,5 @@
+/** ############ Logik Rechner ############ */
+
 /** Tabelle für Notenberechnung mit der jeweiligen Gewichtung */
 const notenGewichtung = new Map([
     ['vornoteMathematik', 1.0/15],
@@ -71,24 +73,44 @@ const notenGewichtung = new Map([
     document.getElementById("gesamtnotenschnitt").value = '';
   }
 
+/** ############ Dialoge und Texte ############ */
+
 /** Steuerung Hilfetext ein- und ausblenden mit "HTML Dialog" */
 
-dialog = document.getElementById("hilfetext");
+dialogHilfetext = document.getElementById("hilfetext");
   document.getElementById("openHilfetext").onclick = function(){
-  dialog.showModal();
+  dialogHilfetext.showModal();
 }
 
 document.getElementById("closeHilfetext").onclick = function(){
-  dialog.close();
+  dialogHilfetext.close();
 }
 
-/** Steuerung Disclamer ein- und ausblenden mit "HTML Dialog" */
+/** Steuerung Hinweis ein- und ausblenden mit "HTML Dialog" */
 
-dialog = document.getElementById("hinweistext");
-  document.getElementById("openHinweis").onclick = function(){
-  dialog.showModal();
+dialogHinweistext = document.getElementById("hinweistext");
+  document.getElementById("openHinweistext").onclick = function(){
+  dialogHinweistext.showModal();
 }
 
-document.getElementById("closeHinweis").onclick = function(){
-  dialog.close();
+document.getElementById("closeHinweistext").onclick = function(){
+  dialogHinweistext.close();
+}
+
+/** Steuerung Gymnasiumtext */
+
+document.getElementById("gymnasiumtext").onclick = function(){
+  dialogGymnasiumtext.close();
+}
+
+/** Steuerung Handelschuletext */
+
+document.getElementById("handelsschuletext").onclick = function(){
+  dialogHandelsschuletext.close();
+}
+
+/** Steuerung Handelschuletext */
+
+document.getElementById("lehretext").onclick = function(){
+  dialoglehretext.close();
 }
