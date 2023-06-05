@@ -65,21 +65,26 @@ const notenGewichtung = new Map([
     field.value = round2(sollNote);
   }
 
+/** Steuerung Modal Text */
+
 function ctrlMsg(){
+  let checkBox = document.getElementById("windowhide");
   let schnitt = document.getElementById("gesamtnotenschnitt").value
-  console.log(schnitt);
-  if (schnitt >= 4.75){
-    dialogGymnasiumtext = document.getElementById("gymnasiumtext");{
+  if (checkBox.checked == false){
+    if (schnitt >= 4.75){
+      dialogGymnasiumtext = document.getElementById("gymnasiumtext");{
       dialogGymnasiumtext.showModal();}
+    }
+    if (schnitt >= 4.5){
+      dialogHandelsschuletext = document.getElementById("handelsschuletext");{
+        dialogHandelsschuletext.showModal();}
+    }
+    else{
+      dialoglehretext = document.getElementById("lehretext");{
+      dialoglehretext.showModal();}
+    }
   }
-  if (schnitt >= 4.5){
-    dialogHandelsschuletext = document.getElementById("handelsschuletext");{
-      dialogHandelsschuletext.showModal();}
-  }
-  else{
-    dialoglehretext = document.getElementById("lehretext");{
-    dialoglehretext.showModal();}
-  }
+
 }
 
 //** Reset Button / Alle Felder leeren */
@@ -127,7 +132,7 @@ document.getElementById("handelsschuletext").onclick = function(){
   dialogHandelsschuletext.close();
 }
 
-/** Steuerung Handelschuletext */
+/** Steuerung Lehretext */
 
 document.getElementById("lehretext").onclick = function(){
   dialoglehretext.close();
