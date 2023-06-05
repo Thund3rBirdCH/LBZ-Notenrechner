@@ -8,9 +8,32 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
 
 </head>
 <body>
+
+  <!-- Header -->
+
+  <nav class="navbar navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-calculator"></i>
+        LBZ Notenrechner
+      </a>
+        <button class="btn btn-primary" onclick="calculate()">Berechnen</button>
+        <button class="btn btn-secondary" onclick="reverseCalculate()">Reverse</button>
+        <button class="btn btn-outline-danger" onclick="reset()">Reset</button>
+        <button class="btn btn-outline-info" id="openHinweistext">Hinweis</button>
+        <button class="btn btn-outline-info" id="openHilfetext">Hilfe</button>
+    </div>
+  </nav>
+
+  <!-- Benachrichtigungen & Texte -->
 
   <dialog id="hilfetext">
     <H1>Hilfe</H1>
@@ -43,6 +66,84 @@
   </dialog>
 
 
+  <!-- Vornoten Eingabefelder-->
+
+<form id="vornoten" class="vornoten">
+  <fieldset>
+    <legend>Vornoten (ungerundet)</legend>
+
+  <div class="form-floating mb-3">
+    <input class="form-control" name="vornoteMathematik" id="vornoteMathematik" type="number" min="1" max="6" placeholder="Vornote Mathematik">
+    <label for="vornoteMathematik">Vornote Mathematik <i class="bi bi-calculator-fill"></i></label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input class="form-control" name="geometrie" id="geometrie" type="number" min="1" max="6" placeholder="Vornote Geometrie">
+    <label for="geometrie">Vornote Geometrie <i class="bi bi-circle-square"></i></label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input class="form-control" name="deuscth" id="deutsch" type="number" min="1" max="6" placeholder="Vornote Deutsch">
+    <label for="deutsch">Vornote Deutsch <i class="bi bi-blockquote-left"></i></label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input class="form-control" name="französisch" id="französisch" type="number" min="1" max="6" placeholder="Vornote Französisch">
+    <label for="französisch">Vornote Französisch <i class="bi bi-translate"></i></label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input class="form-control" name="englisch" id="englisch" type="number" min="1" max="6" placeholder="Vornote English">
+    <label for="englisch">Vornote Englisch <i class="bi bi-globe-americas"></i></label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input class="form-control" name="naturtechnik" id="naturtechnik" type="number" min="1" max="6" placeholder="Vornote Natur & Technik">
+    <label for="naturtechnik">Vornote Natur & Technick <i class="bi bi-universal-access-circle"></i></label>
+  </div>
+
+  </fieldset>
+</form>
+
+  <!-- Prüfungsnoten Eingabefelder-->
+
+<form id="prüfungsnoten" class="prüfungsnoten">
+
+  <fieldset>
+    <legend>Prüfungsnoten</legend>
+
+    <div class="form-floating mb-3">
+      <input class="form-control" name="prüfungsnoteMathematik" id="prüfungsnoteMathematik" type="number" min="1" max="6" placeholder="Prüfungsnote Mathematik">
+      <label for="prüfungsnoteMathematik">Prüfungsnote Mathematik <i class="bi bi-calculator-fill"></i></label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input class="form-control" name="deutschAufsatz" id="deutschAufsatz" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Aufsatz">
+      <label for="deutschAufsatz">Prüfungsnote Deutsch Aufsatz <i class="bi bi-pen-fill"></i></label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input class="form-control" name="deutschTextverständnis" id="deutschTextverständnis" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Textverständnis">
+      <label for="deutschTextverständnis">Prüfungsnote Deutsch Textverständnis <i class="bi bi-patch-check-fill"></i></label>
+    </div>
+
+  </fieldset>
+
+  <!-- Gesammtnoten Eingabefelder-->
+
+  <form id="gesammtnoten">
+    <fieldset>
+      <legend>Gesamtnotenschnitt</legend>
+
+      <div class="form-floating mb-3">
+        <input class="form-control" name="gesamtnotenschnitt" id="gesamtnotenschnitt" type="number" min="1" max="6" placeholder="Gesammtnotenschnitt">
+        <label for="prüfungsnoteMathematik">Gesammtnotenschnitt <i class="bi bi-check-all"></i></label>
+      </div>
+    </fieldset>
+  </form>
+
+<!-- Legacy Code
+
   <form id="vornoten">
     <fieldset>
       <legend>Vornoten</legend>
@@ -65,7 +166,9 @@
       <input name="naturtechnik" id="naturtechnik" type="number" min="1" max="6" placeholder="Vornote Natur & Technik">
     </fieldset>
   </form>
-      
+
+
+
   <form id="prüfungsnoten">
     <fieldset>
       <legend>Prüfungsnoten</legend>
@@ -79,7 +182,9 @@
       <input name="deutschTextverständnis" id="deutschTextverständnis" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Textverständnis"></input>
     </fieldset>
   </form>
-  
+
+
+
   <form id="gesammtnoten">
     <fieldset>
       <legend>Gesamtnotenschnitt</legend>
@@ -87,22 +192,15 @@
       <input name="gesamtnotenschnitt" id="gesamtnotenschnitt" type="number"></input><br>
     </fieldset>
   </form>
+
+  -->
   
   <div id="message-container"></div>
       
-  <button onclick="calculate()">Berechnen</button>
-      
-  <button onclick="reverseCalculate()">Reverse</button>
-
-  <button onclick="reset()">Reset</button>
-
-  <button id="openHinweistext">Hinweis</button>
-
-  <button id="openHilfetext">Hilfe</button>
-
-  
-  <input type="checkbox" id="windowhide">
-  <label for="windowhide"> Fenster Verstecken</label>
+  <input class="form-check-input" type="checkbox" id="windowhide">
+  <label class="form-check-label" for="windowhide">
+    Pop-Up Fenster Verstecken
+  </label>
 
   <a href="readme.txt">Version 0.1.4.1</a>
 

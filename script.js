@@ -70,6 +70,7 @@ const notenGewichtung = new Map([
 function ctrlMsg(){
   let checkBox = document.getElementById("windowhide");
   let schnitt = document.getElementById("gesamtnotenschnitt").value
+  
   if (checkBox.checked == false){
     if (schnitt >= 4.75){
       dialogGymnasiumtext = document.getElementById("gymnasiumtext");{

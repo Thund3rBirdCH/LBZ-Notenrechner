@@ -4,6 +4,9 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
+## 0.1.5:
+-Bootstrap als CSS Eingebunden
+
 ## 0.1.4.1
 -Checkbox für das Ausblenden der Textfelder integriert
 
