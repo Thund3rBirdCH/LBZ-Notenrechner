@@ -65,6 +65,18 @@ const notenGewichtung = new Map([
     field.value = round2(sollNote);
   }
 
+/** Radio Buttons Wert in Gesamtnotenschnitt */
+
+function radioButtonSchnitt() {
+  document.getElementsByName("radioButtonClass")
+    .forEach(radio => {
+      if (radio.checked) {
+        console.log(radio.value)
+      }
+    })
+}
+
+
 /** Steuerung Modal Text */
 
 function ctrlMsg(){

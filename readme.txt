@@ -4,6 +4,24 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
+## 0.1.5.2:
+- Neuer Ordner "resources"
+- Favicon
+- Webmanifest
+- Header Img mit Animation
+- Version im Header
+- Background Color / Gradient
+
+## 0.1.5.1:
+-Bootstrap Elemente:
+    -Darstellung optimiert
+    -Einzelne Elemente Zentriert
+
+-Google Fonts eingebunden:
+    -Symbole in den Eingabefelder angepasst
+
+-Neue Radio Buttons mit "Zielen" eingefügt (noch nicht Funktionsfähig)
+
 ## 0.1.5:
 -Bootstrap als CSS Eingebunden
 
