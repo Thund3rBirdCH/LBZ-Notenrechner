@@ -3,6 +3,13 @@ html body{
     background-image: linear-gradient(to right top, #6cacff, #61beff, #64ceff, #75ddff, #8debff);
 }
 
+.nav-banner{
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .nav-img{
     transition: transform 0.6s;
 }

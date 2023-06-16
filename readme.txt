@@ -4,6 +4,10 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
+## 0.5.3:
+- Nav-Banner hinzugefügt
+    - Versionsnummer in Nav-Banner
+
 ## 0.1.5.2:
 - Neuer Ordner "resources"
 - Favicon
