@@ -1,7 +1,11 @@
+/** ############ Allgemein ############ **/
+
 html body{
     height: 100vh;
     background-image: linear-gradient(to right top, #6cacff, #61beff, #64ceff, #75ddff, #8debff);
 }
+
+/** ############ NAV-Banner ############ **/
 
 .nav-banner{
     background-color: black;
@@ -9,6 +13,8 @@ html body{
     display: flex;
     justify-content: flex-end;
 }
+
+/** ############ Nav-Menü ############ **/
 
 .nav-img{
     transition: transform 0.6s;
@@ -19,24 +25,25 @@ html body{
     transform: rotate(-15deg) scale(1.5);
 }
 
-.offcanvas-body button{
-    margin-top: 25px;
-}
+/** ############ Siedebar / Offcanvas ############ **/
 
 .offcanvas-body h3{
-    margin-top: 25px;
+    margin-bottom: 25px;
 }
+
+.offcanvas-body button{
+    margin-bottom: 25px;
+}
+
+/** ############ Body Wrapper ############ **/
 
 .container{
     margin-top: 25px;
 }
 
+/** ############ Eingabefelder ############ **/
+
 input:out-of-range {
     background-color: rgba(220, 53, 69, 0.25);
     border: 2px solid #dc3545;
 }
-
-.spezial {
-    background-color: #dc3545;
-}
-
