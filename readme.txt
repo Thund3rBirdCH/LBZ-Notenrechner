@@ -4,6 +4,12 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
+## 0.5.4.1
+- Optionsmenü
+    - Trennlinien
+    - Icons in den Titeln
+    - Icons in den Buttons
+
 ## 0.5.4
 - Optionsmenü
     - Hilfe Button > Sidebar
