@@ -111,28 +111,6 @@ function ctrlMsg(){
 
 /** ############ Dialoge und Texte ############ */
 
-/** Steuerung Hilfetext ein- und ausblenden mit "HTML Dialog" */
-
-dialogHilfetext = document.getElementById("hilfetext");
-  document.getElementById("openHilfetext").onclick = function(){
-  dialogHilfetext.showModal();
-}
-
-document.getElementById("closeHilfetext").onclick = function(){
-  dialogHilfetext.close();
-}
-
-/** Steuerung Hinweis ein- und ausblenden mit "HTML Dialog" */
-
-dialogHinweistext = document.getElementById("hinweistext");
-  document.getElementById("openHinweistext").onclick = function(){
-  dialogHinweistext.showModal();
-}
-
-document.getElementById("closeHinweistext").onclick = function(){
-  dialogHinweistext.close();
-}
-
 /** Steuerung Gymnasiumtext */
 
 document.getElementById("gymnasiumtext").onclick = function(){

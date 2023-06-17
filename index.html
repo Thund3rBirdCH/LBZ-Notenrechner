@@ -22,15 +22,15 @@
 </head>
 <body>
 
-  <!-- Header Banner -->
+  <!-- ############ Header Banner ############ -->
 
   <div class="nav-banner">
-    <span class="badge text-bg-info"><a href="readme.txt" class="link-dark">v0.1.5.3</a></span>
+    <span class="badge text-bg-info"><a href="readme.txt" class="link-dark">v0.1.5.4</a></span>
   </div>
 
   
 
-  <!-- Header -->
+  <!-- ############ Header ############ -->
 
   <nav class="navbar navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
     <div class="container-fluid">
@@ -42,24 +42,13 @@
         <button class="btn btn-primary" onclick="calculate()">Berechnen</button>
         <button class="btn btn-secondary" onclick="reverseCalculate()">Reverse</button>
         <button class="btn btn-outline-danger" onclick="reset()">Reset</button>
-        <button class="btn btn-outline-info" id="openHinweistext">Hinweis</button>
-        <button class="btn btn-outline-info" id="openHilfetext">Hilfe</button>
+
+        <!-- Button to open the offcanvas sidebar -->
+        <button class="btn btn-outline-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarCanvas"><i class="bi bi-gear-fill"></i></button>
     </div>
   </nav>
 
-  <!-- Benachrichtigungen & Texte -->
-
-  <dialog id="hilfetext">
-    <H1>Hilfe</H1>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    <button id="closeHilfetext" class="btn btn-outline-danger">Schliessen</button>  
-  </dialog>
-
-  <dialog id="hinweistext">
-    <H1>Hinweis</H1>
-    <p>Die Inhalte des Notenrechners wurden mit grösstmöglicher Sorgfalt und nach bestem Gewissen erstellt. Dennoch übernimmt das Laufbahnzentrum keine Gewähr für die Aktualität, Vollständigkeit und Richtigkeit der bereitgestellten Inhalte.</p>
-    <button id="closeHinweistext" class="btn btn-outline-danger">Schliessen</button>  
-  </dialog>
+  <!-- ############ Benachrichtigungen & Texte ############ -->
 
   <dialog id="gymnasiumtext">
     <H1>Gymnasium</H1>
@@ -79,14 +68,101 @@
     <button id="closeLehretext" class="btn btn-outline-danger">Schliessen</button>  
   </dialog>
 
+<!-- ############ Offcanvas / Sidebar ############ -->
 
-<!-- Wrapper um Eingabefelder-->
+<div class="offcanvas offcanvas-end text-bg-dark" id="sidebarCanvas">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Optionen</h1>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <!-- Inhalt -->
+
+  <div class="offcanvas-body">
+
+    <h3>Über</h3>
+
+    <button class="btn btn-outline-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarHilfe">Hilfe</button><br>
+    <button class="btn btn-outline-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarHinweis">Hinweis</button>
+
+    <h3>Ziele</h3>
+
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioButtonClass" id="radioFrei" value="">
+      <label class="form-check-label" for="radioFrei">
+        Ziel Frei
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioButtonClass" id="radioHMS" value="4.5">
+      <label class="form-check-label" for="radioHMS">
+        Ziel HMS
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioButtonClass" id="radioGym" value="4.75">
+      <label class="form-check-label" for="radioGym">
+        Ziel Gymnasium
+      </label>
+    </div>
+
+    <button class="btn btn-primary" onclick="radioButtonSchnitt()">Akt.</button>
+
+    <h3>Fenster Optionen</h3>
+
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="windowhide">
+      <label class="form-check-label" for="windowhide">Pop-Up Fenster Verstecken</label>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- ############ Sidebar - Option - Hilfe ############ -->
+
+<div class="offcanvas offcanvas-end text-bg-dark" id="sidebarHilfe">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Hilfe</h1>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <!-- Inhalt -->
+
+  <div class="offcanvas-body">
+
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+  </div>
+</div>
+
+<!-- ############ Sidebar - Option - Hinweis ############ -->
+
+<div class="offcanvas offcanvas-end text-bg-dark" id="sidebarHinweis">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Hinweis</h1>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <!-- Inhalt -->
+
+  <div class="offcanvas-body">
+
+    <p>Die Inhalte des Notenrechners wurden mit grösstmöglicher Sorgfalt und nach bestem Gewissen erstellt. 
+      Dennoch übernimmt das Laufbahnzentrum keine Gewähr für die Aktualität, Vollständigkeit und Richtigkeit 
+      der bereitgestellten Inhalte.</p>
+
+  </div>
+</div>
+
+
+<!-- ############ Wrapper um Eingabefelder ############-->
 
 <div class="container">
   <div class="row">
     <div class="col-md-6">
 
-       <!-- Vornoten Eingabefelder-->
+       <!-- ############ Vornoten Eingabefelder ############-->
 
        <form id="vornoten" class="vornoten">
         <fieldset>
@@ -149,7 +225,7 @@
 
      
 
-  <!-- Prüfungsnoten Eingabefelder-->
+  <!-- ############ Prüfungsnoten Eingabefelder ############ -->
 
     <form id="prüfungsnoten" class="prüfungsnoten">
       <fieldset>
@@ -191,7 +267,7 @@
   <div class="row">
     <div class="col-md-12">
 
-  <!-- Gesammtnoten Eingabefelder-->
+  <!-- ############ Gesammtnoten Eingabefelder ############ -->
 
     <form id="gesammtnoten">
       <fieldset>
@@ -212,52 +288,10 @@
   
   <div id="message-container"></div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="radioButtonClass" id="radioFrei" value="">
-          <label class="form-check-label" for="radioFrei">
-            Ziel Frei
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="radioButtonClass" id="radioHMS" value="4.5">
-          <label class="form-check-label" for="radioHMS">
-            Ziel HMS
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="radioButtonClass" id="radioGym" value="4.75">
-          <label class="form-check-label" for="radioGym">
-            Ziel Gymnasium
-          </label>
-        </div>
-
-        <button class="btn btn-primary" onclick="radioButtonSchnitt()">Akt.</button>
-
-      </div>
-
-      <div class="col-md-4">
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="windowhide">
-          <label class="form-check-label" for="windowhide">Pop-Up Fenster Verstecken</label>
-        </div>
-
-      </div>
-
-        
-
-      </div> <!-- End Col Rechts-->
-    </div> <!-- End ROW-->
-  </div> <!-- End Container-->
-
-
-
 </body>
 
 <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

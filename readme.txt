@@ -4,6 +4,17 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
+## 0.5.4
+- Optionsmenü
+    - Hilfe Button > Sidebar
+        - Hilfetext > Sidebar
+    - Hinweis Button
+        - Hinweistext > Sidebar
+    - Ziele > Sidebar
+    - Fenster Optionen > Sidebar
+
+- Hilfe und Hinweis Dialoge wurden entfernt
+
 ## 0.5.3:
 - Nav-Banner hinzugefügt
     - Versionsnummer in Nav-Banner
