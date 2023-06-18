@@ -13,7 +13,22 @@ const notenGewichtung = new Map([
     ['deutschTextverständnis', 1.0/8]
   ]);
 
-/** Notenschnitt berechnen = Notenschnitt */
+  function countEmptyInputFields() {
+    let count = 0
+    notenGewichtung.forEach((value, key) =>{
+      let field = document.getElementById(key);
+      if (field.value.length == 0)
+        ++count;
+      });
+      return count;
+    }
+
+  function isReverseCalculation() {
+    return ((document.getElementById("gesamtnotenschnitt").value.length > 0) && (countEmptyInputFields() == 1))
+  }
+
+
+  /** Notenschnitt berechnen = Notenschnitt */
 
   function notenschnitt() {                       /** Name der Funktion */
     let schnitt = 0                               /** Schnitt auf 0 setzen */
@@ -31,15 +46,22 @@ const notenGewichtung = new Map([
     return Math.round(100 * val + 0.5) / 100;
   }
 
-/** Berechnen */
-  
-  function calculate(){
-    let schnitt = notenschnitt()
-    schnitt = round2(schnitt);
-    document.getElementById("gesamtnotenschnitt").value=schnitt
-    ctrlMsg()
-  }
-  
+
+function calculate() {
+  if (isReverseCalculation())
+    reverseCalculate();
+  else
+    forwardCalculate();
+}
+
+/** Notenschnitt Berechnen */
+function forwardCalculate(){
+  let schnitt = notenschnitt()
+  schnitt = round2(schnitt);
+  document.getElementById("gesamtnotenschnitt").value=schnitt
+  ctrlMsg()
+}
+
 /** Funktion um leeres Fled zu finden für Reverse */
 
   function findEmptyFieldKey() {
@@ -65,13 +87,13 @@ const notenGewichtung = new Map([
     field.value = round2(sollNote);
   }
 
-/** Radio Buttons Wert in Gesamtnotenschnitt */
+ 
+ /** Radio Buttons Wert in Gesamtnotenschnitt */ 
 
-function radioButtonSchnitt() {
-  document.getElementsByName("radioButtonClass")
-    .forEach(radio => {
+function zielChanged() {
+  document.getElementsByName("radioButtonClass").forEach(radio => {
       if (radio.checked) {
-        console.log(radio.value)
+        document.getElementById("gesamtnotenschnitt").value = radio.value;
       }
     })
 }
@@ -87,8 +109,7 @@ function ctrlMsg(){
     if (schnitt >= 4.75){
       dialogGymnasiumtext = document.getElementById("gymnasiumtext");{
       dialogGymnasiumtext.showModal();}
-    }
-    if (schnitt >= 4.5){
+    } else if (schnitt >= 4.5){
       dialogHandelsschuletext = document.getElementById("handelsschuletext");{
         dialogHandelsschuletext.showModal();}
     }
