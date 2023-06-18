@@ -40,7 +40,6 @@
       </a>
        <!-- Buttons -->
         <button class="btn btn-primary" onclick="calculate()">Berechnen</button>
-        <button class="btn btn-secondary" onclick="reverseCalculate()">Reverse</button>
         <button class="btn btn-outline-danger" onclick="reset()">Reset</button>
 
         <!-- Button to open the offcanvas sidebar -->
@@ -92,25 +91,23 @@
     <p>Bestimme was du erreichen möchtest</p>
 
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="radioButtonClass" id="radioFrei" value="">
+      <input class="form-check-input" type="radio" name="radioButtonClass" id="radioFrei" value="" onchange="zielChanged();" >
       <label class="form-check-label" for="radioFrei">
         Ziel Frei
       </label>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="radioButtonClass" id="radioHMS" value="4.5">
+      <input class="form-check-input" type="radio" name="radioButtonClass" id="radioHMS" value="4.5" onchange="zielChanged();" >
       <label class="form-check-label" for="radioHMS">
         Ziel HMS
       </label>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="radioButtonClass" id="radioGym" value="4.75">
+      <input class="form-check-input" type="radio" name="radioButtonClass" id="radioGym" value="4.75" onchange="zielChanged();">
       <label class="form-check-label" for="radioGym">
         Ziel Gymnasium
       </label>
     </div>
-
-    <button class="btn btn-primary" onclick="radioButtonSchnitt()">Akt.</button>
 
     <hr>
 
