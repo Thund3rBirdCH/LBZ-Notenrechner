@@ -4,13 +4,35 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
-## 0.5.4.1
+## 0.1.6 Codename X-1
+
+Codename X-1
+
+Die Bell X-1 war ein amerikanisches Experimental- und Raketenflugzeug, das von der Bell Aircraft Co. für ein
+gemeinsames Forschungsprojekt der US Air Force und das National Advisory Committee for Aeronautics (NACA) gebaut wurde.
+Der einsitzige Mitteldecker wurde speziell dafür entwickelt, im Horizontalflug die Schallmauer zu durchbrechen.
+
+- Neue Funktionen:
+    - Rechnen funktioniert über einen Button
+    - Ziele können definiert werden (Gymi, HMS, Frei)
+    - Texte wurden finalisiert
+    - AGPL-3.0 Lizenz
+
+- Optische Anpassung:
+    - Reverse Button wurde gelöscht
+    - Logo der Stadt Zürich / LBZ wurde eingefügt
+    - Info Texte der Noten wurde hinzugefügt
+    - Hinweis Text wurde ergänzt
+    - Powerd by hinzugefügt
+
+
+## 0.1.5.4.1
 - Optionsmenü
     - Trennlinien
     - Icons in den Titeln
     - Icons in den Buttons
 
-## 0.5.4
+## 0.1.5.4
 - Optionsmenü
     - Hilfe Button > Sidebar
         - Hilfetext > Sidebar
@@ -21,7 +43,7 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 - Hilfe und Hinweis Dialoge wurden entfernt
 
-## 0.5.3:
+## 0.1.5.3:
 - Nav-Banner hinzugefügt
     - Versionsnummer in Nav-Banner
 
@@ -65,5 +87,5 @@ Hilfetext und Hinweistext wurden Hinzugefügt
 ## 0.1.1
 Reset Button wurde hinzugefügt
 
-## 0.1 
+## 0.1
 Einfaches HTML und Javascript. Die Noten werden korrekt berechnet

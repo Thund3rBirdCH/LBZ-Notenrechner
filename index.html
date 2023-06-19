@@ -25,7 +25,7 @@
   <!-- ############ Header Banner ############ -->
 
   <div class="nav-banner">
-    <span class="badge text-bg-info"><a href="readme.txt" class="link-dark">v0.1.5.4.1</a></span>
+    <img src="resources/logo/logo_stzh_lbz_rgb_blau_digital.svg" height="48px">
   </div>
 
   
@@ -51,13 +51,31 @@
 
   <dialog id="gymnasiumtext">
     <H1>Gymnasium</H1>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    <p>Das Gymnasium vermittelt eine breite Allgemeinbildung. Für Jugendliche, die Freude
+      an theoretischen Auseinandersetzungen haben und gerne zur Schule gehen, kann das
+      Gymnasium der richtige Weg sein. Es bereitet auf eine akademische Ausbildung vor
+      und ermöglicht den prüfungsfreien Zugang zur Universität. (MBA Kt. ZH, 2022)</p>
+
+      <a href="https://www.zh.ch/de/bildung/schulen/maturitaetsschule.html" target="_blank">Weitere Informationen zum Gymnasium</a><br>
+
     <button id="closeGymnaisumtext" class="btn btn-outline-danger">Schliessen</button>  
   </dialog>
 
   <dialog id="handelsschuletext">
     <H1>Handelsschule</H1>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    <p>An der Handelsmittelschule (HMS) wird eine kaufmännische Berufsausbildung mit
+      einer vertieften Allgemeinbildung verknüpft. Die HMS eignet sich für leistungsfähige
+      und motivierte Jugendliche, die ein ausgeprägtes Interesse an wirtschaftlich-
+      rechtlichen Fragestellungen, an Sprachen sowie Freude im Umgang mit
+      Informatikanwendungen mitbringen. Mit dem HMS-Abschluss verfügt man über eine
+      doppelte Qualifikation: über einen Abschluss der beruflichen Grundbildung mit
+      eidgenössischem Fähigkeitszeugnis (EFZ) als Kauffrau resp. Kaufmann sowie über ein
+      Berufsmaturitätszeugnis. Dieses befähigt dazu, ein Fachhochschulstudium
+      aufzunehmen. (MBA Kt. ZH, 2022)</p>
+
+      <a href="https://www.zh.ch/de/bildung/schulen/maturitaetsschule/handelsmittelschule.html" target="_blank">Weitere Informationen zur Handelsmittelschule</a><br>
+
+
     <button id="closeHandelsschuletext" class="btn btn-outline-danger">Schliessen</button>  
   </dialog>
 
@@ -71,7 +89,8 @@
 
 <div class="offcanvas offcanvas-end text-bg-dark" id="sidebarCanvas">
   <div class="offcanvas-header">
-    <h1 class="offcanvas-title">Optionen</h1>
+    <h1 class="offcanvas-title">Optionen</h1> 
+    <span class="badge text-bg-info"><a href="readme.txt" class="link-dark">v0.1.6 X-1</a></span>
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
   </div>
 
@@ -118,6 +137,12 @@
       <label class="form-check-label" for="windowhide">Pop-Up Fenster Verstecken</label>
     </div>
 
+    <hr>
+
+    <h5><i class="bi bi-hand-thumbs-up-fill"></i> Support us on</h5>
+
+    <a href="https://github.com/Thund3rBirdCH/LBZ-Notenrechner" target="_blank"><h4><i class="bi bi-github"> GitHub</i></h4></a>
+
 
   </div>
 </div>
@@ -151,9 +176,22 @@
 
   <div class="offcanvas-body">
 
+    <h2>Nutzung</h2>
+
+    <p>Du gehst zurzeit in die 2. Sekundarschule A und spielst mit dem Gedanken, die
+      Aufnahmeprüfung ans Gymnasium oder die Handelsmittelschule zu machen? Wenn du
+      sowohl in Mathematik als auch in Französisch das Niveau 1 besuchst, wird dein 1.
+      Zeugnis von der 2. Sekundarschule als Vornote berücksichtigt.</p>
+
+      <h2>Haftungsausschluss</h2>
+
     <p>Die Inhalte des Notenrechners wurden mit grösstmöglicher Sorgfalt und nach bestem Gewissen erstellt. 
       Dennoch übernimmt das Laufbahnzentrum keine Gewähr für die Aktualität, Vollständigkeit und Richtigkeit 
       der bereitgestellten Inhalte.</p>
+
+      <h3>Rundungsdifferenz</h3>
+
+      <p>Beachte bitte zusätzlich, dass durch die automatische Berechnung einen Rundungsfehler von 0.01 enstehen kann.</p>
 
   </div>
 </div>
@@ -169,12 +207,21 @@
 
        <form id="vornoten" class="vornoten">
         <fieldset>
-          <legend>Vornoten (ungerundet)</legend>
+          <legend>Vorleistungsnote (ungerundet)</legend>
+
+          <details>
+            <summary>Infos</summary>
+              <p>Die Vorleistungsnote errechnet sich aus den Fächern Mathematik (Niveau 1),
+              Geometrie, Deutsch, Französisch (Niveau 1), Englisch und Natur &amp; Technik des 1.
+              Zeugnisses der 2. Sekundarschule A.</p>
+          </details>
+
+
       
           <div class="form-floating mb-3">
               <input class="form-control" name="vornoteMathematik" id="vornoteMathematik" type="number" min="1" max="6" placeholder="Vornote Mathematik">
               <label for="vornoteMathematik">
-                Vornote Mathematik
+                Vornote Mathematik Niveau 1
                 <span class="material-symbols-outlined">calculate</span>
               </label>
           </div>
@@ -190,7 +237,7 @@
           <div class="form-floating mb-3">
               <input class="form-control" name="deuscth" id="deutsch" type="number" min="1" max="6" placeholder="Vornote Deutsch">
               <label for="deutsch">
-                Vornote Deutsch
+                Vornote Deutsch Niveau 1
                 <span class="material-symbols-outlined">edit_note</span>
               </label>
           </div>
@@ -214,7 +261,7 @@
           <div class="form-floating mb-3">
               <input class="form-control" name="naturtechnik" id="naturtechnik" type="number" min="1" max="6" placeholder="Vornote Natur & Technik">
               <label for="naturtechnik">
-                Vornote Natur & Technick
+                Vornote Natur & Technik
                 <span class="material-symbols-outlined">biotech</span>
               </label>
           </div>
@@ -233,7 +280,17 @@
     <form id="prüfungsnoten" class="prüfungsnoten">
       <fieldset>
         <legend>Prüfungsnoten (in viertelnoten)</legend>
-    
+
+        <details>
+          <summary>Infos</summary>
+            <p>Die Zentrale Aufnahmeprüfung 2 (ZAP2) in eine Maturitätsschule
+              (Gymnasium / Handelsmittelschule) ist schriftlich und umfasst die Prüfungsfächer
+              Deutsch und Mathematik. Das Prüfungsfach Deutsch besteht aus den Prüfungsteilen
+              «Verfassen eines Textes (Aufsatz)» und «Sprachbetrachtung und Textverständnis».
+              Die Prüfungsnote besteht zu je einem Viertel aus den beiden Deutschprüfungsteilen
+              und zur Hälfte aus der Mathematikprüfung.</p>
+        </details>
+
         <div class="form-floating mb-3">
           <input class="form-control" name="prüfungsnoteMathematik" id="prüfungsnoteMathematik" type="number" min="1" max="6" placeholder="Prüfungsnote Mathematik">
           <label for="prüfungsnoteMathematik">
@@ -275,6 +332,12 @@
     <form id="gesammtnoten">
       <fieldset>
         <legend>Gesamtnotenschnitt</legend>
+
+        <details>
+          <summary>Infos</summary>
+            <p>Wenn die Vorleistungsnote zählt, entspricht die Gesamtnote dem Durchschnitt der
+              Prüfungsnote und der Vorleistungsnote. Er wird auf zwei Nachkommastellen gerundet.</p>
+        </details>
 
         <div class="form-floating mb-3">
           <input class="form-control" name="gesamtnotenschnitt" id="gesamtnotenschnitt" type="number" min="1" max="6" placeholder="Gesammtnotenschnitt">

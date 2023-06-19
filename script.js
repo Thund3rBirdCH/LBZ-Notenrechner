@@ -13,6 +13,8 @@ const notenGewichtung = new Map([
     ['deutschTextverständnis', 1.0/8]
   ]);
 
+  /** Finde und Zähle die Leeren Inputfelder */
+
   function countEmptyInputFields() {
     let count = 0
     notenGewichtung.forEach((value, key) =>{
@@ -22,6 +24,8 @@ const notenGewichtung = new Map([
       });
       return count;
     }
+
+    /** Findet heraus ob ReverseCalculation angewendet wird  */
 
   function isReverseCalculation() {
     return ((document.getElementById("gesamtnotenschnitt").value.length > 0) && (countEmptyInputFields() == 1))
@@ -46,6 +50,8 @@ const notenGewichtung = new Map([
     return Math.round(100 * val + 0.5) / 100;
   }
 
+
+  /** Entscheidet ob "Vorwärts" oder "Rückwerts" gerechnet wird  */
 
 function calculate() {
   if (isReverseCalculation())
