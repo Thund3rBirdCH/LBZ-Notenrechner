@@ -51,6 +51,9 @@
 
   <dialog id="gymnasiumtext">
     <H1>Gymnasium</H1>
+
+    <p>Mit der Gesamtnote 4.75 oder höher hast du die Aufnahmeprüfung ans Gymnasium bestanden.</p>
+
     <p>Das Gymnasium vermittelt eine breite Allgemeinbildung. Für Jugendliche, die Freude
       an theoretischen Auseinandersetzungen haben und gerne zur Schule gehen, kann das
       Gymnasium der richtige Weg sein. Es bereitet auf eine akademische Ausbildung vor
@@ -62,7 +65,10 @@
   </dialog>
 
   <dialog id="handelsschuletext">
-    <H1>Handelsschule</H1>
+    <H1>Handelsmittelschule</H1>
+
+    <p>Mit der Gesamtnote 4.5 oder höher hast du die Aufnahmeprüfung an die Handelsmittelschule bestanden.</p>
+
     <p>An der Handelsmittelschule (HMS) wird eine kaufmännische Berufsausbildung mit
       einer vertieften Allgemeinbildung verknüpft. Die HMS eignet sich für leistungsfähige
       und motivierte Jugendliche, die ein ausgeprägtes Interesse an wirtschaftlich-
@@ -178,10 +184,14 @@
 
     <h2>Nutzung</h2>
 
-    <p>Du gehst zurzeit in die 2. Sekundarschule A und spielst mit dem Gedanken, die
-      Aufnahmeprüfung ans Gymnasium oder die Handelsmittelschule zu machen? Wenn du
-      sowohl in Mathematik als auch in Französisch das Niveau 1 besuchst, wird dein 1.
-      Zeugnis von der 2. Sekundarschule als Vornote berücksichtigt.</p>
+    <p>Du gehst zurzeit in die 2. Sekundarschule A und spielst mit dem Gedanken, die Aufnahmeprüfung
+      (Zentrale Aufnahmeprüfung 2; ZAP 2)  ans Gymnasium oder die Handelsmittelschule zu machen?
+      Wenn du sowohl in Mathematik als auch in Französisch das Niveau 1 besuchst, wird dein 1. Zeugnis
+      von der 2. Sekundarschule als Vornote berücksichtigt.</p>
+
+      <p>Die ZAP 2 ist die Aufnahmeprüfung für das Gymnasium und die Handelsmittelschule.
+        Um die Aufnahmeprüfung zu bestehen, brauchst du für die Handelsmittelschule mindestens
+        eine Gesamtnote von 4.5, für das Gymnasium mindestens eine Gesamtnote von 4.75,</p>
 
       <h2>Haftungsausschluss</h2>
 
@@ -189,9 +199,9 @@
       Dennoch übernimmt das Laufbahnzentrum keine Gewähr für die Aktualität, Vollständigkeit und Richtigkeit 
       der bereitgestellten Inhalte.</p>
 
-      <h3>Rundungsdifferenz</h3>
+      <h2>Rundungsdifferenz</h2>
 
-      <p>Beachte bitte zusätzlich, dass durch die automatische Berechnung einen Rundungsfehler von 0.01 enstehen kann.</p>
+      <p>Beachte bitte zusätzlich, dass durch die automatische Berechnung ein Rundungsfehler von 0.01 enstehen kann.</p>
 
   </div>
 </div>
@@ -221,48 +231,42 @@
           <div class="form-floating mb-3">
               <input class="form-control" name="vornoteMathematik" id="vornoteMathematik" type="number" min="1" max="6" placeholder="Vornote Mathematik">
               <label for="vornoteMathematik">
-                Vornote Mathematik Niveau 1
-                <span class="material-symbols-outlined">calculate</span>
+                Vorleistungsnote Mathematik (Niveau 1)
               </label>
           </div>
           
           <div class="form-floating mb-3">
               <input class="form-control" name="geometrie" id="geometrie" type="number" min="1" max="6" placeholder="Vornote Geometrie">
               <label for="geometrie">
-                Vornote Geometrie
-                <span class="material-symbols-outlined">architecture</span>
+                Vorleistungsnote Geometrie
               </label>
           </div>
           
           <div class="form-floating mb-3">
               <input class="form-control" name="deuscth" id="deutsch" type="number" min="1" max="6" placeholder="Vornote Deutsch">
               <label for="deutsch">
-                Vornote Deutsch Niveau 1
-                <span class="material-symbols-outlined">edit_note</span>
+                Vorleistungsnote Deutsch (Niveau 1)
               </label>
           </div>
           
           <div class="form-floating mb-3">
               <input class="form-control" name="französisch" id="französisch" type="number" min="1" max="6" placeholder="Vornote Französisch">
               <label for="französisch">
-                Vornote Französisch
-                <span class="material-symbols-outlined">language_french</span>
+                Vorleistungsnote Französisch
               </label>
           </div>
           
           <div class="form-floating mb-3">
               <input class="form-control" name="englisch" id="englisch" type="number" min="1" max="6" placeholder="Vornote English">
               <label for="englisch">
-                Vornote Englisch
-                <span class="material-symbols-outlined">language_gb_english</span>
+                Vorleistungsnote Englisch
               </label>
           </div>
           
           <div class="form-floating mb-3">
               <input class="form-control" name="naturtechnik" id="naturtechnik" type="number" min="1" max="6" placeholder="Vornote Natur & Technik">
               <label for="naturtechnik">
-                Vornote Natur & Technik
-                <span class="material-symbols-outlined">biotech</span>
+                Vorleistungsnote Natur & Technik
               </label>
           </div>
       
@@ -279,7 +283,7 @@
 
     <form id="prüfungsnoten" class="prüfungsnoten">
       <fieldset>
-        <legend>Prüfungsnoten (in viertelnoten)</legend>
+        <legend>Prüfungsnoten (in Viertelnoten)</legend>
 
         <details>
           <summary>Infos</summary>
@@ -295,7 +299,6 @@
           <input class="form-control" name="prüfungsnoteMathematik" id="prüfungsnoteMathematik" type="number" min="1" max="6" placeholder="Prüfungsnote Mathematik">
           <label for="prüfungsnoteMathematik">
             Prüfungsnote Mathematik
-            <span class="material-symbols-outlined">functions</span>
           </label>
         </div>
     
@@ -303,7 +306,6 @@
           <input class="form-control" name="deutschAufsatz" id="deutschAufsatz" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Aufsatz">
           <label for="deutschAufsatz">
             Prüfungsnote Deutsch Aufsatz
-            <span class="material-symbols-outlined">edit</span>
           </label>
         </div>
     
@@ -311,7 +313,6 @@
           <input class="form-control" name="deutschTextverständnis" id="deutschTextverständnis" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Textverständnis">
           <label for="deutschTextverständnis">
             Prüfungsnote Deutsch Textverständnis
-            <span class="material-symbols-outlined">cognition</span>
           </label>
         </div>
     
@@ -331,7 +332,7 @@
 
     <form id="gesammtnoten">
       <fieldset>
-        <legend>Gesamtnotenschnitt</legend>
+        <legend>Gesamtnote</legend>
 
         <details>
           <summary>Infos</summary>
@@ -342,8 +343,7 @@
         <div class="form-floating mb-3">
           <input class="form-control" name="gesamtnotenschnitt" id="gesamtnotenschnitt" type="number" min="1" max="6" placeholder="Gesammtnotenschnitt">
           <label for="prüfungsnoteMathematik">
-            Gesammtnotenschnitt
-            <span class="material-symbols-outlined">verified</span>
+            Gesammtnote
           </label>
         </div>
       </fieldset>
@@ -353,6 +353,48 @@
 </div> <!-- End Container-->
   
   <div id="message-container"></div>
+
+<div class="footer">
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <img src="resources/favicon/favicon-32x32.png">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">Stadt Zürich Laufbahnzentrum / GameInvaders</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Thund3rBirdCH/LBZ-Notenrechner" target="_blank"><i class="bi bi-github"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/gameinvadersch/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@GameinvadersCh/" target="_blank"><i class="bi bi-youtube"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+</div>
+
+
+ <!-- ############ Footer - Mobile ############ -->
+
+ <div class="footer-mobile">
+  <nav class="navbar navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <button class="btn btn-primary" onclick="calculate()">Berechnen</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-outline-danger" onclick="reset()">Reset</button>
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
 
 </body>
 

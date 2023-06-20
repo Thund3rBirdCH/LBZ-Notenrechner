@@ -52,3 +52,31 @@ input:out-of-range {
     background-color: rgba(220, 53, 69, 0.25);
     border: 2px solid #dc3545;
 }
+
+@media only screen and (min-width: 601px){
+    .footer{
+        margin-top: 150px;
+        visibility: visible;
+
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .footer{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 601px){
+    .footer-mobile{
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .footer-mobile{
+        visibility: visible;
+    }
+}
