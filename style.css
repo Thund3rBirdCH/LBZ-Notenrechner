@@ -1,7 +1,6 @@
 /** ############ Allgemein ############ **/
 
 html body{
-    height: 100vh;
     background-image: linear-gradient(to right top, #6cacff, #61beff, #64ceff, #75ddff, #8debff);
 }
 
@@ -64,13 +63,13 @@ input:out-of-range {
 
 @media only screen and (max-width: 600px){
     .footer{
-        visibility: hidden;
+        display: none;
     }
 }
 
 @media only screen and (min-width: 601px){
     .footer-mobile{
-        visibility: hidden;
+        display: none;
     }
 }
 

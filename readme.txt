@@ -4,6 +4,18 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
+## 0.1.7 Codename X-1
+
+- Neue Funktionen
+    - Löschbutton neben jedem Eingabefeld
+
+- Sonstige Anpassungen:
+    - Ziele unterhalb der Gesamtnote eingefügt
+    - Text Entwur "So funktionierts"
+    - Grafik hinzugfefügt bei "So funktionierts"
+    - Text etwas gekürtzt
+
+
 ## 0.1.6 Codename X-1
 
 Codename X-1

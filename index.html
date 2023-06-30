@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notenrechner</title>
+    <title>ZAP 2-Notenrechner</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -36,7 +36,7 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img class="nav-img" src="resources/templates/notenrechner-fav.png" width="32px">
-        LBZ Notenrechner
+        LBZ ZAP 2-Notenrechner
       </a>
        <!-- Buttons -->
         <button class="btn btn-primary" onclick="calculate()">Berechnen</button>
@@ -54,14 +54,9 @@
 
     <p>Mit der Gesamtnote 4.75 oder höher hast du die Aufnahmeprüfung ans Gymnasium bestanden.</p>
 
-    <p>Das Gymnasium vermittelt eine breite Allgemeinbildung. Für Jugendliche, die Freude
-      an theoretischen Auseinandersetzungen haben und gerne zur Schule gehen, kann das
-      Gymnasium der richtige Weg sein. Es bereitet auf eine akademische Ausbildung vor
-      und ermöglicht den prüfungsfreien Zugang zur Universität. (MBA Kt. ZH, 2022)</p>
+    <a href="https://www.zh.ch/de/bildung/schulen/maturitaetsschule.html" target="_blank">Weitere Informationen zum Gymnasium</a><br>
 
-      <a href="https://www.zh.ch/de/bildung/schulen/maturitaetsschule.html" target="_blank">Weitere Informationen zum Gymnasium</a><br>
-
-    <button id="closeGymnaisumtext" class="btn btn-outline-danger">Schliessen</button>  
+    <br><button id="closeGymnaisumtext" class="btn btn-outline-danger">Schliessen</button>  
   </dialog>
 
   <dialog id="handelsschuletext">
@@ -69,20 +64,9 @@
 
     <p>Mit der Gesamtnote 4.5 oder höher hast du die Aufnahmeprüfung an die Handelsmittelschule bestanden.</p>
 
-    <p>An der Handelsmittelschule (HMS) wird eine kaufmännische Berufsausbildung mit
-      einer vertieften Allgemeinbildung verknüpft. Die HMS eignet sich für leistungsfähige
-      und motivierte Jugendliche, die ein ausgeprägtes Interesse an wirtschaftlich-
-      rechtlichen Fragestellungen, an Sprachen sowie Freude im Umgang mit
-      Informatikanwendungen mitbringen. Mit dem HMS-Abschluss verfügt man über eine
-      doppelte Qualifikation: über einen Abschluss der beruflichen Grundbildung mit
-      eidgenössischem Fähigkeitszeugnis (EFZ) als Kauffrau resp. Kaufmann sowie über ein
-      Berufsmaturitätszeugnis. Dieses befähigt dazu, ein Fachhochschulstudium
-      aufzunehmen. (MBA Kt. ZH, 2022)</p>
+    <a href="https://www.zh.ch/de/bildung/schulen/maturitaetsschule/handelsmittelschule.html" target="_blank">Weitere Informationen zur Handelsmittelschule</a><br>
 
-      <a href="https://www.zh.ch/de/bildung/schulen/maturitaetsschule/handelsmittelschule.html" target="_blank">Weitere Informationen zur Handelsmittelschule</a><br>
-
-
-    <button id="closeHandelsschuletext" class="btn btn-outline-danger">Schliessen</button>  
+    <br><button id="closeHandelsschuletext" class="btn btn-outline-danger">Schliessen</button>  
   </dialog>
 
   <dialog id="lehretext">
@@ -96,7 +80,7 @@
 <div class="offcanvas offcanvas-end text-bg-dark" id="sidebarCanvas">
   <div class="offcanvas-header">
     <h1 class="offcanvas-title">Optionen</h1> 
-    <span class="badge text-bg-info"><a href="readme.txt" class="link-dark">v0.1.6 X-1</a></span>
+    <span class="badge text-bg-info"><a href="readme.txt" class="link-dark">v0.1.7 X-1</a></span>
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
   </div>
 
@@ -106,7 +90,7 @@
 
     <h3><i class="bi bi-house-door-fill"></i> Über</h3>
 
-    <button class="btn btn-outline-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarHilfe"><i class="bi bi-info-circle-fill"></i> Hilfe</button><br>
+    <button class="btn btn-outline-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarHilfe"><i class="bi bi-info-circle-fill"></i> So funktionierts</button><br>
     <button class="btn btn-outline-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarHinweis"><i class="bi bi-bell-fill"></i> Hinweis</button>
 
     <hr>
@@ -157,7 +141,7 @@
 
 <div class="offcanvas offcanvas-end text-bg-dark" id="sidebarHilfe">
   <div class="offcanvas-header">
-    <h1 class="offcanvas-title">Hilfe</h1>
+    <h1 class="offcanvas-title">So funktionierts</h1>
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
   </div>
 
@@ -165,7 +149,34 @@
 
   <div class="offcanvas-body">
 
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    <h2>Einfaches Rechnen</h2>
+
+    <p>Du kannst ganz einfach deine Gesammtnoten ermitteln, indem du in den einzelnen Eingabefelder deine Note eingibst.
+      Bei den Vorleistungsnoten kannst du einfach dein letztes Zeugnis zurhand nehmen und diese Noten 1:1 eingeben.
+    </p>
+
+    <p>
+      Bei den Pürfungsnote musst du dich einschätzen, welche Note du erreichen wirst.
+      Danach klicke auf "Berechnen" und der Notenrechner errechnet dir deine Gesamtnote.
+    </p>
+
+    <h2>Rückwärts Rechnen</h2>
+
+    <p>Der Notenrechner kann auch "rückwärts" Rechnen. Das bedeutet, du kannst zb deine Ziel-Gesamtnote einngeben. Nun fülle alle anderen Felder aus, bis auf eines.</p>
+    
+    <p>Nun kannst du errechnen, was du für eine Note haben müsstest, damit du diesen Gesammtnote erreichen kannst</p>
+
+    <p>Sollte die Note "rot" erscheinen und über einer 6 liegen, so kannst du dein Ziel nicht mehr erreichen. Stecke daher das Ziel etwas niedriger und versuche es nochmals</p>
+
+    <h2>So setzen sich die Noten zusammen</h2>
+
+    <p>Hier siehst du eine kleine Grafik wie sich die Noten zusammen Zählen bzw wie die Gewichtung ist der einzelnen Noten.
+      Klicke <a href="https://excalidraw.com/#json=viRLu95rLG8g3X8RrErS9,f6ijsgaUHMFybxX1vZoQfw" class="link-info" target="_blank">HIER</a> um die Grafik zu vergrössern.
+    </p>
+
+    <img src="resources/grafik/Notenberechnung-dark.png" class="img-fluid">
+
+    
 
   </div>
 </div>
@@ -182,7 +193,7 @@
 
   <div class="offcanvas-body">
 
-    <h2>Nutzung</h2>
+    <h2>Was ist die ZAP2?</h2>
 
     <p>Du gehst zurzeit in die 2. Sekundarschule A und spielst mit dem Gedanken, die Aufnahmeprüfung
       (Zentrale Aufnahmeprüfung 2; ZAP 2)  ans Gymnasium oder die Handelsmittelschule zu machen?
@@ -216,7 +227,7 @@
        <!-- ############ Vornoten Eingabefelder ############-->
 
        <form id="vornoten" class="vornoten">
-        <fieldset>
+        
           <legend>Vorleistungsnote (ungerundet)</legend>
 
           <details>
@@ -226,53 +237,77 @@
               Zeugnisses der 2. Sekundarschule A.</p>
           </details>
 
+          <form>
+            <div class="input-group mb-3">
+              <div class="form-floating">
+                <input class="form-control" name="vornoteMathematik" id="vornoteMathematik" type="number" min="1" max="6" placeholder="Vornote Mathematik (Niveau 1)">
+                <label for="vornoteMathematik">Vornote Mathematik (Niveau 1)</label>
+              </div>
+              <button class="btn btn-secondary" type="reset">
+                Löschen
+              </button>
+            </div>
+          </form>
 
-      
-          <div class="form-floating mb-3">
-              <input class="form-control" name="vornoteMathematik" id="vornoteMathematik" type="number" min="1" max="6" placeholder="Vornote Mathematik">
-              <label for="vornoteMathematik">
-                Vorleistungsnote Mathematik (Niveau 1)
-              </label>
-          </div>
-          
-          <div class="form-floating mb-3">
-              <input class="form-control" name="geometrie" id="geometrie" type="number" min="1" max="6" placeholder="Vornote Geometrie">
-              <label for="geometrie">
-                Vorleistungsnote Geometrie
-              </label>
-          </div>
-          
-          <div class="form-floating mb-3">
-              <input class="form-control" name="deuscth" id="deutsch" type="number" min="1" max="6" placeholder="Vornote Deutsch">
-              <label for="deutsch">
-                Vorleistungsnote Deutsch (Niveau 1)
-              </label>
-          </div>
-          
-          <div class="form-floating mb-3">
-              <input class="form-control" name="französisch" id="französisch" type="number" min="1" max="6" placeholder="Vornote Französisch">
-              <label for="französisch">
-                Vorleistungsnote Französisch
-              </label>
-          </div>
-          
-          <div class="form-floating mb-3">
-              <input class="form-control" name="englisch" id="englisch" type="number" min="1" max="6" placeholder="Vornote English">
-              <label for="englisch">
-                Vorleistungsnote Englisch
-              </label>
-          </div>
-          
-          <div class="form-floating mb-3">
-              <input class="form-control" name="naturtechnik" id="naturtechnik" type="number" min="1" max="6" placeholder="Vornote Natur & Technik">
-              <label for="naturtechnik">
-                Vorleistungsnote Natur & Technik
-              </label>
-          </div>
-      
-        </fieldset>
-      </form>
+          <form>
+            <div class="input-group mb-3">
+              <div class="form-floating">
+                <input class="form-control" name="geometrie" id="geometrie" type="number" min="1" max="6" placeholder="Vornote Geometrie">
+                <label for="vornoteMathematik">Vornote Geometrie</label>
+              </div>
+              <button class="btn btn-secondary" type="reset">
+                Löschen
+              </button>
+            </div>
+          </form>
 
+          <form>
+            <div class="input-group mb-3">
+              <div class="form-floating">
+                <input class="form-control" name="deuscth" id="deutsch" type="number" min="1" max="6" placeholder="Vornote Deutsch (Niveau 1)">
+                <label for="vornoteMathematik">Vornote Deutsch</label>
+              </div>
+              <button class="btn btn-secondary" type="reset">
+                Löschen
+              </button>
+            </div>
+          </form>
+
+          <form>
+            <div class="input-group mb-3">
+              <div class="form-floating">
+                <input class="form-control" name="französisch" id="französisch" type="number" min="1" max="6" placeholder="Vornote Französisch (Niveau 1)">
+                <label for="vornoteMathematik">Vornote Französisch (Niveau 1)</label>
+              </div>
+              <button class="btn btn-secondary" type="reset">
+                Löschen
+              </button>
+            </div>
+          </form>
+
+          <form>
+            <div class="input-group mb-3">
+              <div class="form-floating">
+                <input class="form-control" name="englisch" id="englisch" type="number" min="1" max="6" placeholder="Vornote English">
+                <label for="vornoteMathematik">Vornote English</label>
+              </div>
+              <button class="btn btn-secondary" type="reset">
+                Löschen
+              </button>
+            </div>
+          </form>
+
+          <form>
+            <div class="input-group mb-3">
+              <div class="form-floating">
+                <input class="form-control" name="naturtechnik" id="naturtechnik" type="number" min="1" max="6" placeholder="Vornote Natur & Technik">
+                <label for="vornoteMathematik">Vornote Natur & Technik</label>
+              </div>
+              <button class="btn btn-secondary" type="reset">
+                Löschen
+              </button>
+            </div>
+          </form>
     </div>
 
     <div class="col-md-6">
@@ -282,7 +317,6 @@
   <!-- ############ Prüfungsnoten Eingabefelder ############ -->
 
     <form id="prüfungsnoten" class="prüfungsnoten">
-      <fieldset>
         <legend>Prüfungsnoten (in Viertelnoten)</legend>
 
         <details>
@@ -291,32 +325,44 @@
               (Gymnasium / Handelsmittelschule) ist schriftlich und umfasst die Prüfungsfächer
               Deutsch und Mathematik. Das Prüfungsfach Deutsch besteht aus den Prüfungsteilen
               «Verfassen eines Textes (Aufsatz)» und «Sprachbetrachtung und Textverständnis».
-              Die Prüfungsnote besteht zu je einem Viertel aus den beiden Deutschprüfungsteilen
-              und zur Hälfte aus der Mathematikprüfung.</p>
+              Die Prüfungsnote errechnet sich aus je einem Viertel der beiden Deutschnoten und zur Hälfte aus der Mathematiknote. Sie wird auf Viertelnoten gerundet.</p>
         </details>
 
-        <div class="form-floating mb-3">
-          <input class="form-control" name="prüfungsnoteMathematik" id="prüfungsnoteMathematik" type="number" min="1" max="6" placeholder="Prüfungsnote Mathematik">
-          <label for="prüfungsnoteMathematik">
-            Prüfungsnote Mathematik
-          </label>
-        </div>
-    
-        <div class="form-floating mb-3">
-          <input class="form-control" name="deutschAufsatz" id="deutschAufsatz" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Aufsatz">
-          <label for="deutschAufsatz">
-            Prüfungsnote Deutsch Aufsatz
-          </label>
-        </div>
-    
-        <div class="form-floating mb-3">
-          <input class="form-control" name="deutschTextverständnis" id="deutschTextverständnis" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Textverständnis">
-          <label for="deutschTextverständnis">
-            Prüfungsnote Deutsch Textverständnis
-          </label>
-        </div>
-    
-      </fieldset>
+        <form>
+          <div class="input-group mb-3">
+            <div class="form-floating">
+              <input class="form-control" name="prüfungsnoteMathematik" id="prüfungsnoteMathematik" type="number" min="1" max="6" placeholder="Prüfungsnote Mathematik">
+              <label for="vornoteMathematik">Prüfungsnote Mathematik</label>
+            </div>
+            <button class="btn btn-secondary" type="reset">
+              Löschen
+            </button>
+          </div>
+        </form>
+
+        <form>
+          <div class="input-group mb-3">
+            <div class="form-floating">
+              <input input class="form-control" name="deutschAufsatz" id="deutschAufsatz" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Aufsatz">
+              <label for="vornoteMathematik">Prüfungsnote Deutsch Aufsatz</label>
+            </div>
+            <button class="btn btn-secondary" type="reset">
+              Löschen
+            </button>
+          </div>
+        </form>
+
+        <form>
+          <div class="input-group mb-3">
+            <div class="form-floating">
+              <input class="form-control" name="deutschTextverständnis" id="deutschTextverständnis" type="number" min="1" max="6" placeholder="Prüfungsnote Deutsch Textverständnis">
+              <label for="vornoteMathematik">Prüfungsnote Deutsch Textverständnis</label>
+            </div>
+            <button class="btn btn-secondary" type="reset">
+              Löschen
+            </button>
+          </div>
+        </form>      
     </form>
 
     </div> <!-- End Col Rechts-->
@@ -331,25 +377,52 @@
   <!-- ############ Gesammtnoten Eingabefelder ############ -->
 
     <form id="gesammtnoten">
-      <fieldset>
-        <legend>Gesamtnote</legend>
+      <legend>Gesamtnote</legend>
 
         <details>
           <summary>Infos</summary>
-            <p>Wenn die Vorleistungsnote zählt, entspricht die Gesamtnote dem Durchschnitt der
-              Prüfungsnote und der Vorleistungsnote. Er wird auf zwei Nachkommastellen gerundet.</p>
+            <p>Die Gesamtnote errechnet sich aus der Vorleistungsnote und der Prüfungsnote und wird auf 2 Nachkommastellen gerundet.</p>
         </details>
 
-        <div class="form-floating mb-3">
-          <input class="form-control" name="gesamtnotenschnitt" id="gesamtnotenschnitt" type="number" min="1" max="6" placeholder="Gesammtnotenschnitt">
-          <label for="prüfungsnoteMathematik">
-            Gesammtnote
-          </label>
-        </div>
-      </fieldset>
+        <form>
+          <div class="input-group mb-3">
+            <div class="form-floating">
+              <input class="form-control" name="gesamtnotenschnitt" id="gesamtnotenschnitt" type="number" min="1" max="6" placeholder="Gesammtnotenschnitt">
+              <label for="vornoteMathematik">Gesammtnotenschnitt</label>
+            </div>
+            <button class="btn btn-secondary" type="reset">
+              Löschen
+            </button>
+          </div>
+        </form>  
     </form>
   </div> <!-- End Col Ganze Breite-->
 </div> <!-- End ROW-->
+
+<hr>
+
+<h4><i class="bi bi-bullseye"></i> Ziele</h4>
+
+<p>Bestimme welches Ziel du erreichen möchtest</p>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radioButtonClass" id="radioFrei" value="" onchange="zielChanged();" >
+  <label class="form-check-label" for="radioFrei">
+    Ziel Frei
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radioButtonClass" id="radioHMS" value="4.5" onchange="zielChanged();" >
+  <label class="form-check-label" for="radioHMS">
+    Ziel HMS
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radioButtonClass" id="radioGym" value="4.75" onchange="zielChanged();">
+  <label class="form-check-label" for="radioGym">
+    Ziel Gymnasium
+  </label>
+</div>
 </div> <!-- End Container-->
   
   <div id="message-container"></div>
@@ -395,6 +468,8 @@
     </div>
   </nav>
 </div>
+
+
 
 </body>
 
