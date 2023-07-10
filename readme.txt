@@ -4,6 +4,21 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
+## 0.1.8 Codename X-1
+
+- Neue Funktionen
+    - Sticky Header
+    - Toast einblendung
+    - Lightbox für Grafiken
+
+- Sonstige Anpassungen:
+    - Ziele an erster stellen
+    - entfernung der "Ziele" in den Optionen
+        - Ziel Frei = Definiere dein Ziel selber
+    - Berechnen und Reset Buttons mit items
+    - Footer Optische Anpassung
+    - Support us Optische Anpassung
+
 ## 0.1.7 Codename X-1
 
 - Neue Funktionen

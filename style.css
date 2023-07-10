@@ -34,6 +34,10 @@ html body{
     margin-bottom: 25px
 }
 
+.offcanvas-body h5{
+    margin: 25px 0px;
+}
+
 
 .offcanvas-body button{
     margin-bottom: 25px;
@@ -52,30 +56,17 @@ input:out-of-range {
     border: 2px solid #dc3545;
 }
 
-@media only screen and (min-width: 601px){
-    .footer{
-        margin-top: 150px;
-        visibility: visible;
+/** ############ Toast ############ **/
 
-    }
+.toast{
+    position: absolute;
+    top: 175px;
+    right: 15px;
+
 }
 
+/** ############ Sidebar - Support ############ **/
 
-@media only screen and (max-width: 600px){
-    .footer{
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 601px){
-    .footer-mobile{
-        display: none;
-    }
-}
-
-
-@media only screen and (max-width: 600px){
-    .footer-mobile{
-        visibility: visible;
-    }
+.sidebar-support{
+    align-items: flex-end;
 }
