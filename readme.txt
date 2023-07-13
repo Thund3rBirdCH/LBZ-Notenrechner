@@ -1,10 +1,10 @@
 # Notenrechner LBZ
 
-Kleines Tool für die Berechnung von Noten und deren Schnitt
+Kleines Tool für die Berechnung von Noten und deren Schnitt.
 
-# Versionen
+## Versionen
 
-## 0.1.8 Codename X-1
+### 0.1.8 Codename X-1
 
 - Neue Funktionen
     - Sticky Header
@@ -19,7 +19,7 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
     - Footer Optische Anpassung
     - Support us Optische Anpassung
 
-## 0.1.7 Codename X-1
+### 0.1.7 Codename X-1
 
 - Neue Funktionen
     - Löschbutton neben jedem Eingabefeld
@@ -27,17 +27,17 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 - Sonstige Anpassungen:
     - Ziele unterhalb der Gesamtnote eingefügt
     - Text Entwur "So funktionierts"
-    - Grafik hinzugfefügt bei "So funktionierts"
+    - Grafik hinzugfefÃ¼gt bei "So funktionierts"
     - Text etwas gekürtzt
 
 
-## 0.1.6 Codename X-1
+### 0.1.6 Codename X-1
 
 Codename X-1
 
 Die Bell X-1 war ein amerikanisches Experimental- und Raketenflugzeug, das von der Bell Aircraft Co. für ein
 gemeinsames Forschungsprojekt der US Air Force und das National Advisory Committee for Aeronautics (NACA) gebaut wurde.
-Der einsitzige Mitteldecker wurde speziell dafür entwickelt, im Horizontalflug die Schallmauer zu durchbrechen.
+Der einsitzige Mitteldecker wurde speziell dafÃ¼r entwickelt, im Horizontalflug die Schallmauer zu durchbrechen.
 
 - Neue Funktionen:
     - Rechnen funktioniert über einen Button
@@ -53,13 +53,13 @@ Der einsitzige Mitteldecker wurde speziell dafür entwickelt, im Horizontalflug 
     - Powerd by hinzugefügt
 
 
-## 0.1.5.4.1
+### 0.1.5.4.1
 - Optionsmenü
     - Trennlinien
     - Icons in den Titeln
     - Icons in den Buttons
 
-## 0.1.5.4
+### 0.1.5.4
 - Optionsmenü
     - Hilfe Button > Sidebar
         - Hilfetext > Sidebar
@@ -70,11 +70,11 @@ Der einsitzige Mitteldecker wurde speziell dafür entwickelt, im Horizontalflug 
 
 - Hilfe und Hinweis Dialoge wurden entfernt
 
-## 0.1.5.3:
+### 0.1.5.3:
 - Nav-Banner hinzugefügt
     - Versionsnummer in Nav-Banner
 
-## 0.1.5.2:
+### 0.1.5.2:
 - Neuer Ordner "resources"
 - Favicon
 - Webmanifest
@@ -82,7 +82,7 @@ Der einsitzige Mitteldecker wurde speziell dafür entwickelt, im Horizontalflug 
 - Version im Header
 - Background Color / Gradient
 
-## 0.1.5.1:
+### 0.1.5.1:
 -Bootstrap Elemente:
     -Darstellung optimiert
     -Einzelne Elemente Zentriert
@@ -92,27 +92,27 @@ Der einsitzige Mitteldecker wurde speziell dafür entwickelt, im Horizontalflug 
 
 -Neue Radio Buttons mit "Zielen" eingefügt (noch nicht Funktionsfähig)
 
-## 0.1.5:
+### 0.1.5:
 -Bootstrap als CSS Eingebunden
 
-## 0.1.4.1
--Checkbox für das Ausblenden der Textfelder integriert
+### 0.1.4.1
+-Checkbox fÃ¼r das Ausblenden der Textfelder integriert
 
-## 0.1.4
+### 0.1.4
 -Texte werden entsprechend den Noten eingeblendet.
 
-## 0.1.3.1 (Fix)
+### 0.1.3.1 (Fix)
 - Hinweistexte lassen sich wieder Schliessen
 
-## 0.1.3
+### 0.1.3
 - ReadMe File wurde ertsellt und hinzuigefügt
-- Texte für Gymnasium und Handelschule sowie Lehre wurden hinzugefügt. 
+- Texte für Gymnasium und Handelschule sowie Lehre wurden hinzugefÃ¼gt. 
 
-## 0.1.2
-Hilfetext und Hinweistext wurden Hinzugefügt
+### 0.1.2
+Hilfetext und Hinweistext wurden HinzugefÃ¼gt
 
-## 0.1.1
-Reset Button wurde hinzugefügt
+### 0.1.1
+Reset Button wurde hinzugefÃ¼gt
 
-## 0.1
+### 0.1
 Einfaches HTML und Javascript. Die Noten werden korrekt berechnet
