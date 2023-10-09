@@ -49,6 +49,14 @@ html body{
     margin-top: 25px;
 }
 
+/** ############ Span ############ **/
+
+span{
+    color: #dc3545;
+    font-weight: bold;
+}
+
+
 /** ############ Eingabefelder ############ **/
 
 input:out-of-range {

@@ -4,6 +4,8 @@ Kleines Tool für die Berechnung von Noten und deren Schnitt
 
 # Versionen
 
+## 0.2.0 Codename ???
+
 ## 0.1.8 Codename X-1
 
 - Neue Funktionen

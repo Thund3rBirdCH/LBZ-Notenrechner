@@ -244,7 +244,88 @@
   </div>
 </div>
 
+<!-- ############ Wrapper um Slider ############-->
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+       <!-- ############ Vornoten Slider ############-->
+
+       <form id="vornoten" class="vornoten">
+        
+          <legend>Vorleistungsnote (ungerundet)</legend>
+
+          <details>
+            <summary>Infos</summary>
+              <p>Die Vorleistungsnote errechnet sich aus den Fächern Mathematik (Niveau 1),
+              Geometrie, Deutsch, Französisch (Niveau 1), Englisch und Natur &amp; Technik des 1.
+              Zeugnisses der 2. Sekundarschule A.</p>
+          </details>
+
+          <label for="vornoteMathematik" class="form-label">Vornote Mathematik (Niveau 1) <span id="rangeValuevornoteMathematik" id="vornoteMathematik">Note</span></label>
+          <input type="range" class="form-range" name="vornoteMathematik" id="vornoteMathematik" min="1" max="6" step="0.5" oninput="rangeValuevornoteMathematik.innerText = this.value"> 
+
+          <label for="geometrie" class="form-label">Vornote Geometrie <span id="rangeValuegeometrie" id="geometrie">Note</span></label>
+          <input type="range" class="form-range" name="geometrie" id="geometrie" min="1" max="6" step="0.5" oninput="rangeValuegeometrie.innerText = this.value"> 
+
+
+          <label for="deutsch" class="form-label">Vornote Deutsch <span id="rangeValuedeutsch" id="deutsch">Note</span></label>
+          <input type="range" class="form-range" name="deutsch" id="deutsch" min="1" max="6" step="0.5" oninput="rangeValuedeutsch.innerText = this.value"> 
+
+
+          <label for="französisch" class="form-label">Vornote Französisch (Niveau 1) <span id="rangeValuefranzösisch" id="französisch">Note</span></label>
+          <input type="range" class="form-range" name="französisch" id="französisch" min="1" max="6" step="0.5" oninput="rangeValuefranzösisch.innerText = this.value"> 
+
+
+          <label for="englisch" class="form-label">Vornote English <span id="rangeValueenglisch" id="englisch">Note</span></label>
+          <input type="range" class="form-range" name="englisch" id="englisch" min="1" max="6" step="0.5" oninput="rangeValueenglisch.innerText = this.value"> 
+
+
+          <label for="naturtechnik" class="form-label">Vornote Natur & Technik <span id="rangeValuenaturtechnik" id="naturtechnik">Note</span></label>
+          <input type="range" class="form-range" name="naturtechnik" id="naturtechnik" min="1" max="6" step="0.5" oninput="rangeValuenaturtechnik.innerText = this.value">
+
+        </form>
+    </div>
+
+    <div class="col-md-6">
+
+     
+
+  <!-- ############ Prüfungsnoten Slider ############ -->
+
+    <form id="prüfungsnoten" class="prüfungsnoten">
+        <legend>Prüfungsnoten (in Viertelnoten)</legend>
+
+        <details>
+          <summary>Infos</summary>
+            <p>Die Zentrale Aufnahmeprüfung 2 (ZAP2) in eine Maturitätsschule
+              (Gymnasium / Handelsmittelschule) ist schriftlich und umfasst die Prüfungsfächer
+              Deutsch und Mathematik. Das Prüfungsfach Deutsch besteht aus den Prüfungsteilen
+              «Verfassen eines Textes (Aufsatz)» und «Sprachbetrachtung und Textverständnis».
+              Die Prüfungsnote errechnet sich aus je einem Viertel der beiden Deutschnoten und zur Hälfte aus der Mathematiknote. Sie wird auf Viertelnoten gerundet.</p>
+        </details>
+
+        <label for="prüfungsnoteMathematik" class="form-label">Prüfungsnote Mathematik <span id="rangeValueprüfungsnoteMathematik" id="prüfungsnoteMathematik">Note</span></label>
+      <input type="range" class="form-range" name="prüfungsnoteMathematik" id="prüfungsnoteMathematik" min="1" max="6" step="0.25" oninput="rangeValueprüfungsnoteMathematik.innerText = this.value"> 
+
+      <label for="deutschAufsatz" class="form-label">Prüfungsnote Deutsch Aufsatz <span id="rangeValuedeutschAufsatz" id="deutschAufsatz">Note</span></label>
+      <input type="range" class="form-range" name="deutschAufsatz" id="deutschAufsatz" min="1" max="6" step="0.25" oninput="rangeValuedeutschAufsatz.innerText = this.value"> 
+
+
+      <label for="deutschTextverständnis" class="form-label">Prüfungsnote Deutsch Textverständnis <span id="rangeValuedeutschTextverständnis" id="deutschTextverständnis">Note</span></label>
+      <input type="range" class="form-range" name="deutschTextverständnis" id="deutschTextverständnis" min="1" max="6" step="0.25" oninput="rangeValuedeutschTextverständnis.innerText = this.value"> 
+
+   
+    </form>
+
+    </div> <!-- End Col Rechts-->
+  </div> <!-- End ROW-->
+</div> <!-- End Container-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
 
 
 <!-- ############ Wrapper um Eingabefelder ############-->
